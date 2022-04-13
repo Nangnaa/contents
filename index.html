@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="main" class="dnd" style="opacity:1; overflow: hidden; ">
+        <div class="wrap">
+            <form id="searchbarform" action="/index.html" method="get" target="_self" enctype="multipart/form-data">
+                <!-- 모바일부분 -->
+            </form>
+            <!-- header -->
+            <header id="header">
+                <div class="header">
+                    <div class="headercenter"><a href="/" class="headerlogo"><img src="/images/ebotalogo.png"
+                                alt="ebotalogo"></a></div>
+
+
+                    <div class="headerNavLeft">
+                        <ul role="list">
+                            <li>
+                                <a href="/" class="navleft-text">구매</a>
+                            </li>
+                            <li>
+                                <a href="/" class="navleft-text">브랜드</a>
+                            </li>
+                            <li>
+                                <a href="/" class="navleft-text">공간이 예술이되는 순간</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="headerNavRight">
+                        <ul role="list">
+                            <li>
+                                <a href="/" class="headerlogin">로그인</a>
+                            </li>
+                            <li>
+                                <a href="/" class="headercart"><img src="/images/cart.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="/" class="headerBtnSearch" onclick="openSearch()"><img src="/images/search.png"
+                                        alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <!-- slide main container -->
+            <div class="swiper-container">
+                <div class="swiper-slide">
+                    <div class="sliderDesc">
+                        <hr class="nameHr">
+                        <div class="descName">
+                            ARICHA
+                        </div>
+                        <a class="descGo" href="/">
+                            &nbsp;<div class="descSub">아리차 드립백 </div>
+                            <div class="descDesc">
+                                중간 정도의 바디감에 산미와 바디감의 밸런스가 <br>
+                                좋은 아리차는, 자스민 향과 같은 꽃향기와 <br>
+                                꿀 같은 달콤한이 느껴지는 특징을 가지고 있습니다.
+                            </div>
+                            <img src="/images/arichacircle.png" alt="">
+                    </div>
+                    <img src="/images/arichaimg.png" alt="">
+                </div>
+                <!-- if we need pagination -->
+                <div class="sliderpag">
+                    <div class="Scontent2">
+                        <div class="ebota-text">초신선을 경험해보세요</div>
+                            <div class="swiper-pagination">
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">1</span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">2</span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3">3</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="ebota-top">
+                    <div class="left">
+                        <div id="circle">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"><defs><path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path></defs><circle cx="150" cy="100" r="75" fill="none"></circle><g><use xlink:href="#circlePath" fill="none"></use><text fill="#000"><textPath xlink:href="#circlePath">5 days - ebota - The Freshest Coffee in the World!</textPath></text></g></svg></div>
+                        <svg id="ebotaLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.06 127.06" onmouseover="aniLogo()"><defs><style>.cls-1{fill:#040000;}.cls-2,.cls-3{fill:none;}.cls-2{stroke:#040000;stroke-miterlimit:10;stroke-width:1.4px;}</style></defs><path class="cls-1" d="M105.87,73.39a43.43,43.43,0,1,1,0-19.82l4.86-1A48.4,48.4,0,1,0,111,73.39Z"></path><line class="cls-2" x1="17.67" y1="72.82" x2="123.76" y2="49.71" stroke-dasharray="108.5779037475586" style="stroke-dashoffset: 0px;"></line><rect class="cls-3" width="127.06" height="127.06"></rect></svg></div>
+                    
+                </div>
+                <div class="ebota-bottom hideMobile">
+                    <svg id="ebotaLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.06 127.06" onmouseover="aniLogo()"><defs><style>.cls-1{fill:#040000;}.cls-2,.cls-3{fill:none;}.cls-2{stroke:#040000;stroke-miterlimit:10;stroke-width:1.4px;}</style></defs><path class="cls-1" d="M105.87,73.39a43.43,43.43,0,1,1,0-19.82l4.86-1A48.4,48.4,0,1,0,111,73.39Z"></path><line class="cls-2" x1="17.67" y1="72.82" x2="123.76" y2="49.71" stroke-dasharray="108.5779037475586" style="stroke-dashoffset: 0px;"></line><rect class="cls-3" width="127.06" height="127.06"></rect></svg><p class="textEng">
+                        The Freshest Coffee<br>
+                        in the World
+                    </p>
+                </div>
+
+
+            </div>
+
+
+
+        </div><!-- wrap -->
+</body>
+
+</html>

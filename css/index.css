@@ -1,0 +1,116 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, 
+code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
+    margin: 0;
+    padding: 0;
+} 
+
+ul, li{list-style: none; display: flex;}
+a{text-decoration: none;}
+hr {
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #333;
+}
+
+
+body, code {
+    font-size: 12px;
+    font-family: "Noto Sans KR","Apple SD Gothic Neo","맑은 고딕","malgun gothic",sans-serif;
+    color: #000;
+}
+
+div{display: block;}
+
+.header{
+    display: flex; margin-top: 14px; margin-right: auto; margin-left: auto; padding-left: 0px; justify-content: space-between;
+    align-items: center;
+}
+
+.headerNavLeft > li {display: flex;}
+.navleft-text{
+    font-family: 'Noto Sans KR'; color: #b8b8b8; font-weight: 400; font-size: 14px; display: flex;
+    margin: 10px 20px 0px; padding-right: 0px; padding-left: 0px; text-decoration: none; list-style-type: none;
+}
+
+.headerNavRight {}
+.headerlogin{margin-top: 10px;font-family: 'Noto Sans KR'; color: #b8b8b8; font-weight: 400; font-size: 14px;}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+ .swiper-slide {
+     margin: 0;
+    width: 1396px;
+    height: 580px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+}
+
+.sliderDesc {
+    position: relative;
+    z-index: 11;
+}
+.nameHr {
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin: 9px;
+}
+
+.descName {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #202020;
+    padding: 0 0 30px 0;
+    position: relative;
+}
+
+.descSub {
+    font-family: Noto Sans KR;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    text-align: left;
+    color: #202020;
+    padding: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.descDesc {
+    font-family: Noto Sans KR;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.9em;
+    letter-spacing: -0.33px;
+    text-align: left;
+    color: #202020;
+}
