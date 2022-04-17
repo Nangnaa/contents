@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -54,10 +59,10 @@
             </header>
 
             <!-- slide main container -->
-            <div class="swiper-container">
+            <div class="swiper-container swiper-top">
                 <div class="swiper-slide">
                     <div class="sliderDesc">
-                        <hr class="nameHr">
+                        <hr class="nameHr" style="opacity: 1; transform: rotate(-29.9999deg);">
                         <div class="descName">
                             ARICHA
                         </div>
@@ -70,27 +75,76 @@
                             </div>
                             <img src="/images/arichacircle.png" alt="">
                     </div>
-                    <img src="/images/arichaimg.png" alt="">
-                </div>
-                <!-- if we need pagination -->
-                <div class="sliderpag">
-                    <div class="Scontent2">
-                        <div class="ebota-text">초신선을 경험해보세요</div>
-                            <div class="swiper-pagination">
-                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">1</span>
-                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">2</span>
-                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3">3</span>
+                    <img class="slideImg" src="/images/arichaimg.png" alt="">
+
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1">
+                     <!-- style="width: 1369px; opacity: 1; transform: translate3d(-2738px, 0px, 0px); transition-duration: 0ms;" -->
+                        <div class="sliderDesc">
+                            <hr class="nameHr" style="opacity: 1; transform: rotate(-29.9999deg);">
+                            <div class="descName" >
+                                KOKE
                             </div>
+                            <a class="descGo" href="/">
+                                <img class="descImg" src="/">
+                                &nbsp;<div class="descSub" >코케 드립백 <img src="/"></div>
+                                <div class="descDesc" >
+                                    잘 숙성된 히비스커스와 감귤 맛의 코케는,<br>
+                                    전체적으로 밝고 화사한 맛이 두드러지며,<br>
+                                    특히 사탕과 같은 단맛이 특징입니다.            
+                                </div>
+                                <img src="/images/kokecircle.jpg" alt="">
+                            &nbsp;</a>
+                        </div>
+                        <div class="sliderImg ">
+                            <a class="descGo" href="/"><img src="/"></a>
+                        </div>
+                        <img  src="">
+                    &nbsp;</div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2">
+                    <!-- style="width: 1369px; opacity: 0; transform: translate3d(-4107px, 0px, 0px); transition-duration: 0ms;" -->
+                        <div class="sliderDesc">
+                            <hr class="nameHr" style="opacity: 1; transform: rotate(-29.9999deg);"><div class="descName" style="transform: translate(0px, 0px); opacity: 1;">
+                                KONGA
+                            </div>
+                            <a class="descGo" href="/">
+                                <img class="descImg" src="/">
+                                &nbsp;<div class="descSub" style="transform: translate(0px, 0px); opacity: 1;">콩가 드립백 <img src="/"></div>
+                                <div class="descDesc" style="transform: translate(0px, 0px); opacity: 1;">
+                                    적당한 바디감에 초콜릿과 바닐라 맛이 느껴지면서도,<br>
+                                    마치 레몬과 만다린 주스와 같은 산뜻한 산미에<br>
+                                    은은한 꽃향기가 특징입니다.
+                                </div>
+                     
+                                <img class="slideImg" src="/images/konggacircle.png" style="transform: translate(0px, 0px); opacity: 1;">
+                            &nbsp;</a>
+                        </div>
+                        <div class="sliderImg " style="transform: translate(0px, 0px); opacity: 1;">
+                            <a class="descGo" href="/"><img src="/"></a>
+                        </div>
+                        <img class="slideBlur" src="/" style="opacity: 1;">
+                    &nbsp;</div>
+                </div><!-- /swiper-slide -->
+                
+                
+                <!-- if we need pagination -->
+                <div class="sliderPag">
+                    <div class="Scontent2">
+                        <nav class="ebota-text">초신선을 경험해보세요</nav>
+                            <ul class="swiper-pagination">
+                                <li class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1">1</li>
+                                <li class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">2</li>
+                                <li class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3">3</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 <div class="ebota-top">
                     <div class="left">
                         <div id="circle">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"><defs><path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path></defs><circle cx="150" cy="100" r="75" fill="none"></circle><g><use xlink:href="#circlePath" fill="none"></use><text fill="#000"><textPath xlink:href="#circlePath">5 days - ebota - The Freshest Coffee in the World!</textPath></text></g></svg></div>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve"><defs><path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "></path></defs><circle cx="150" cy="100" r="75" fill="none"></circle><g><use xlink:href="#circlePath" fill="none"></use><text fill="#000"><textPath xlink:href="#circlePath">5 days - ebota - The Freshest Coffee in the World!</textPath></text></g></svg><img class="logoimg" src="/images/logoimg.png" alt=""></div>
                         <svg id="ebotaLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.06 127.06" onmouseover="aniLogo()"><defs><style>.cls-1{fill:#040000;}.cls-2,.cls-3{fill:none;}.cls-2{stroke:#040000;stroke-miterlimit:10;stroke-width:1.4px;}</style></defs><path class="cls-1" d="M105.87,73.39a43.43,43.43,0,1,1,0-19.82l4.86-1A48.4,48.4,0,1,0,111,73.39Z"></path><line class="cls-2" x1="17.67" y1="72.82" x2="123.76" y2="49.71" stroke-dasharray="108.5779037475586" style="stroke-dashoffset: 0px;"></line><rect class="cls-3" width="127.06" height="127.06"></rect></svg></div>
                     
                 </div>
-                <div class="ebota-bottom hideMobile">
+                <div class="ebota-bottom ">
                     <svg id="ebotaLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.06 127.06" onmouseover="aniLogo()"><defs><style>.cls-1{fill:#040000;}.cls-2,.cls-3{fill:none;}.cls-2{stroke:#040000;stroke-miterlimit:10;stroke-width:1.4px;}</style></defs><path class="cls-1" d="M105.87,73.39a43.43,43.43,0,1,1,0-19.82l4.86-1A48.4,48.4,0,1,0,111,73.39Z"></path><line class="cls-2" x1="17.67" y1="72.82" x2="123.76" y2="49.71" stroke-dasharray="108.5779037475586" style="stroke-dashoffset: 0px;"></line><rect class="cls-3" width="127.06" height="127.06"></rect></svg><p class="textEng">
                         The Freshest Coffee<br>
                         in the World
@@ -102,7 +156,9 @@
 
 
 
+
         </div><!-- wrap -->
+        <script src="/js/slide.js"></script>
 </body>
 
 </html>

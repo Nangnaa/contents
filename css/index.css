@@ -2,7 +2,8 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
     margin: 0;
     padding: 0;
-} 
+}
+
 
 ul, li{list-style: none; display: flex;}
 a{text-decoration: none;}
@@ -11,6 +12,17 @@ hr {
     height: 1px;
     color: #333;
     background-color: #333;
+}
+element.style {
+    opacity: 1;
+    overflow: auto;
+}
+
+body {
+    min-height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    max-width: 1440px;
 }
 
 
@@ -36,14 +48,30 @@ div{display: block;}
 .headerNavRight {}
 .headerlogin{margin-top: 10px;font-family: 'Noto Sans KR'; color: #b8b8b8; font-weight: 400; font-size: 14px;}
 
-.swiper-container {
+.swiper-container  {
     margin-left: auto;
     margin-right: auto;
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
     list-style: none;
     padding: 0;
     z-index: 1;
+}
+
+.swiper-top .swiper-pagination-bullet {
+    padding: 0 0 0 20px;
+    position: relative;
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #202020;
+    background: none;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
 }
 
  .swiper-slide {
@@ -75,7 +103,7 @@ div{display: block;}
 }
 
 .descName {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 600;
     font-stretch: normal;
@@ -114,3 +142,99 @@ div{display: block;}
     text-align: left;
     color: #202020;
 }
+
+.sliderPag {
+    z-index: 1;
+    position: absolute;
+    right: 1px;
+    bottom: 30px;
+}
+
+.Scontent2 {
+    display: flex;
+}
+.ebota-text {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.33px;
+    text-align: left;
+    color: #202020;
+    padding: 0 20px 0 0;
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin: -7px 5px 0 0;
+}
+
+.swiper-pagination-bullet {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #000;
+    opacity: .2;
+}
+
+.swiper-pagination-bullet:hover{
+    background: #000;
+}
+
+.ebota-top  {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    width: 300px;
+    right: 10px;
+}
+
+#circle {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    /* overflow: hidden; */
+}
+
+.logoimg {
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    top: 115px;
+    right: 105px;
+}
+
+.ebota-bottom {
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.swiper-notification {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.ebota-bottom svg {
+    width: 60px;
+    height: 60px;
+}
+
+.sliderDesc{display: none;}
+.sliderDesc.active {display: block;}
