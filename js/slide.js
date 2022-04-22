@@ -1,42 +1,58 @@
-// window.addEventListener('load', function(){
-//     var n = 0; 
-//     var slide = document.getElementsByClassName("swiper-slide")[0]; 
-//     var infoArray = [];
-//     for(var i= 0; i < slide.children.length; i++){
-//        if(slide.children[i].tagName == "NAV"){
-//           var swiperslide = slide.children[i];
-//        }
-//        else{
-//           infoArray.push(slide.children[i]);
-//        }
-//     }
+// var ul = document.querySelector('.swiper-slide');
+ 
+//         function move(){
+//             var curIndex = 0;
+//             setInterval(function(){
+//                 ul.style.transition = '1s';
+//                 ul.style.transform = "translate3d(-"+400*(curIndex+1)+"px, 0px, 0px)";
+//                 curIndex++;
+//                 if(curIndex === 3){
+//                     setTimeout(function(){
+//                         ul.style.transition = '0s';
+//                         ul.style.transform = "translate3d(0px, 0px, 0px)";
+//                     },201)
+//                     curIndex = 0;
+//                 }
+
+//             },2000);}
+        
+//         document.addEventListener("DOMContentLoaded",function(){
+//             move();
+//  });
+
+window.addEventListener('load', function(){
+
+    // var container = document.getElementsByClassName('swiper-container')[0];  
+    // var controller = document.getElementsByClassName('swiper-pagination')[0];
+    var liList = document.getElementsByClassName('swiper-pagination-bullet');
+    var n = 0; 
+
+    
+    // var picture = document.getElementsByClassName("swiper-slide")[0];
+    var pictureLi = document.getElementsByClassName("slide");
+    // var taggetx = 0; 
+
     
 
+    for(var i=0; i < liList.length; i++){
+        liList[i].index = i;
 
-    // var navLi = swiperslide.children[0].children;//nav ul li를 의미
-    // //console.log(navLi);
-
-    // navLi[n].classList.add("on");
-    // infoArray[n].classList.add("active");
-
-    // for(var i=0; i < navLi.length; i++ ){
-    //     navLi[i].index = i; // 수업시간에 이부분이 빠졌음
-
-    //     navLi[i].addEventListener('click', function(e){
-    //         e.preventDefault();
-    //         n = e.currentTarget.index;// 현재 클릭한 대상의 인덱스
-
-    //         //클래스를 적용하고 없애기를 할때 기본형식
-    //         for (var j = 0; j < navLi.length; j++) {
-    //                 if (j == n) {
-    //                     navLi[j].classList.add("on");
-    //                     infoArray[j].classList.add("active");
-    //                 }
-    //                 else {
-    //                     navLi[j].classList.remove("on");
-    //                     infoArray[j].classList.remove("active");
-    //                 }
-    //             }
-    //     });
-    //  }
-    // });
+        liList[i].addEventListener('click', function(e){
+              e.preventDefault();
+              n = e.currentTarget.index
+    
+              for(var j=0; j < liList.length; j++){//
+                     if(j == n){
+                        liList[j].classList.add("on");   
+                        pictureLi[j].classList.add("active");
+                     }
+                     else{
+                        liList[j].classList.remove("on");
+                        pictureLi[j].classList.remove("active")   
+                     }
+              }
+        });
+        
+    }
+    
+});
