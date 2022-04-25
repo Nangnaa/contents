@@ -56,3 +56,27 @@ window.addEventListener('load', function(){
     }
     
 });
+
+function fullchange(e) {
+    e.setAttribute('src', './images/paletarichacircle2.png');
+  }
+
+  function fullchange2(e) {
+    e.setAttribute('src', './images/paletaricha.png');
+  }
+
+  function fullchange3(e) {
+    e.setAttribute('src', './images/paletkokecircle2.png');
+  }
+
+  function fullchange4(e) {
+    e.setAttribute('src', './images/paletkoke.png');
+  }
+
+  function fullchange5(e) {
+    e.setAttribute('src', './images/paletkongacircle2.png');
+  }
+
+  function fullchange6(e) {
+    e.setAttribute('src', './images/paletkonga.png');
+  }
