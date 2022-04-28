@@ -13,7 +13,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
@@ -49,10 +50,10 @@
                                 <a href="/" class="headerlogin">로그인</a>
                             </li>
                             <li>
-                                <a href="/" class="headercart"><img src="/images/cart.png" alt=""></a>
+                                <a href="#" class="headercart"><img src="/images/cart.png" alt="" ></a>
                             </li>
                             <li>
-                                <a href="/" class="headerBtnSearch" onclick="openSearch()"><img src="/images/search.png"
+                                <a href="#" class="headerBtnSearch"><img src="/images/search.png"
                                         alt=""></a>
                             </li>
                         </ul>
@@ -61,7 +62,7 @@
             </header>
 
             <!-- slide main container -->
-            <div class="swiper-container swiper-top">
+            <div class="swiper-container swiper-top" style="padding-top: 50px;">
                 <div id="slider" class="swiper-slide">
                     <ul>
                         <li class="slide active ">
@@ -84,6 +85,7 @@
                                 </a>
 
                             </div>
+                            <img class="slideBlur" src="/images/slide-aricha-blur.png" alt="">
                             <a href="#"><img class="descImg " src="/images/arichaimg.png"></a>
                         </li>
 
@@ -108,6 +110,7 @@
                                 </a>
 
                             </div>
+                            <img class="slideBlur" src="/images/slide-koke-blur.png" alt="">
                             <a href="#"><img class="descImg " src="/images/kokeimg.png"></a>
                         </li>
 
@@ -130,6 +133,7 @@
                                     &nbsp;
                                 </a>
                             </div>
+                            <img class="slideBlur" src="/images/slide-konga-blur.png" alt="">
                             <a href=""><img class="descImg " src="/images/kongaimg.png"></a>
                         </li>
                     </ul>
@@ -142,7 +146,7 @@
             <div class="contents">
             <div class="sliderPag">
 
-                <div class="ebota-bottom ">
+                <div class="ebota-bottom" >
                     <svg id="ebotaLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.06 127.06"
                         >
                         <defs><style>.cls-1 {fill: #040000;}.cls-2,.cls-3 {fill: none;}.cls-2 {stroke: #040000;stroke-miterlimit: 10;stroke-width: 1.4px;}</style></defs><path class="cls-1" d="M105.87,73.39a43.43,43.43,0,1,1,0-19.82l4.86-1A48.4,48.4,0,1,0,111,73.39Z"></path><line class="cls-2" x1="17.67" y1="72.82" x2="123.76" y2="49.71"stroke-dasharray="108.5779037475586" style="stroke-dashoffset: 0px;"></line><rect class="cls-3" width="127.06" height="127.06"></rect></svg>
@@ -161,7 +165,7 @@
                 </div>
             </div>
                 <div class="ebota-top">
-                    <div class="left">
+                    <div class="left" style="padding-top: 50px;">
                         <div id="circle">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300"
@@ -184,10 +188,10 @@
                 </div>
                 
                 </div>
-                <div class="taste triger">
+                <div class="taste triger"  >
                     <h2 class="tasteH2">Taste Palette <br> Which color do you like?</h2>
                     <div class="triger">
-                        <div class="trigerin">
+                        <div class="trigerin" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                             <div class="tasteImg">
                                 <div href="#" class="mouseover"><img onmouseover="fullchange(this)" onmouseout="fullchange2(this)" src="/images/paletaricha.png" alt=""/>
                                     <div class="imgText2">상쾌하고 부드러운 꽃향기</div>
@@ -205,7 +209,7 @@
                 </div>
 
 
-                <div class="collabo triger">
+                <div class="collabo triger" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div id="collabo_ebota" class="pannel">
                         <h1 class="collabo_text-home">공간이 예술이되는 순간</h1>
                     </div>
@@ -255,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="partner triger">
+                <div class="partner triger" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="partnerTop content slide-top">
                         <p class="partnerText">Partnership <br> Company</p>
 

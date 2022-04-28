@@ -46,6 +46,7 @@ img, fieldset {border: 0;vertical-align: top;}
 }
 
 .nav{display: flex;}
+.headercart{cursor: pointer;}
 .navleft-text{
     font-family: 'Noto Sans KR'; color: #b8b8b8; font-weight: 400; font-size: 14px; display: flex;
     margin: 10px 20px 0px; padding-right: 0px; padding-left: 0px; text-decoration: none; list-style-type: none;
@@ -87,11 +88,12 @@ img, fieldset {border: 0;vertical-align: top;}
     left: 20%;
     z-index: 10;
 }
-.swiper-top .sliderImg img {
-    width: 470px;
-    height: auto;
-}
 
+.swiper-top .sliderDesc .slideImg {
+    width: 330px;
+    height: auto;
+    z-index: 11;
+}
 
 .swiper-slide {
     margin: 0;
@@ -214,7 +216,7 @@ img, fieldset {border: 0;vertical-align: top;}
 .swiper-pagination {
     position: relative;
     margin: -7px 5px 0 0;
-    
+    display: flex;
 }
 
 .swiper-pagination li{font-size: 20px; font-weight: bold; }
@@ -225,6 +227,7 @@ img, fieldset {border: 0;vertical-align: top;}
     height: 8px;
     border-radius: 50%;
     opacity: .2;
+    display: flex;
 }
 
 

@@ -80,3 +80,7 @@ function fullchange(e) {
   function fullchange6(e) {
     e.setAttribute('src', './images/paletkonga.png');
   }
+
+  AOS.init({
+    duration: 2000
+    });
