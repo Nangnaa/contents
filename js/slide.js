@@ -1,38 +1,28 @@
-// var ul = document.querySelector('.swiper-slide');
- 
-//         function move(){
-//             var curIndex = 0;
-//             setInterval(function(){
-//                 ul.style.transition = '1s';
-//                 ul.style.transform = "translate3d(-"+400*(curIndex+1)+"px, 0px, 0px)";
-//                 curIndex++;
-//                 if(curIndex === 3){
-//                     setTimeout(function(){
-//                         ul.style.transition = '0s';
-//                         ul.style.transform = "translate3d(0px, 0px, 0px)";
-//                     },201)
-//                     curIndex = 0;
-//                 }
+// var index = 0;   //이미지에 접근하는 인덱스
+// window.onload = function () {
+//   slideShow();
+// }
 
-//             },2000);}
-        
-//         document.addEventListener("DOMContentLoaded",function(){
-//             move();
-//  });
+// function slideShow() {
+//   var i;
+//   var x = document.getElementsByClassName("slide");  //slide에 대한 dom 참조
+//   // const slideBtn = document.getElementsByClassName("swiper-pagination");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+//   }
+//   index++;
+//   if (index > x.length) {
+//     index = 1;  //인덱스가 초과되면 1로 변경
+//   }
+//   x[index - 1].style.display = "flex";  //해당 인덱스는 block으로
+//   setTimeout(slideShow, 4000);   //함수를 4초마다 호출
+
+// }
 
 window.addEventListener('load', function(){
-
-    // var container = document.getElementsByClassName('swiper-container')[0];  
-    // var controller = document.getElementsByClassName('swiper-pagination')[0];
     var liList = document.getElementsByClassName('swiper-pagination-bullet');
     var n = 0; 
-
-    
-    // var picture = document.getElementsByClassName("swiper-slide")[0];
     var pictureLi = document.getElementsByClassName("slide");
-    // var taggetx = 0; 
-
-    
 
     for(var i=0; i < liList.length; i++){
         liList[i].index = i;
