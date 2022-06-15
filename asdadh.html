@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: rgba(255,85,0, .7);
+  text-align: center;
+  color: #4E4C48;
+  font-size: 1.5em;
+}
+    </style>
+</head>
+<body>
+    <div class="item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">fade-up</div>
+
+
+    <script>
+        AOS.init({
+    duration: 1500
+    });
+
+    </script>
+</body>
+</html>
